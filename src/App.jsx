@@ -46,17 +46,21 @@ function App() {
         <section id="home" className="hero">
           <div className="hero-grid">
             <div className="hero-content">
+              <div className="hero-badge">
+                <span className="badge-dot" />
+                Available for freelance
+              </div>
               <p className="eyebrow">Hello, I'm</p>
               <h1 className="hero-title">
                 Glorimo Jay <span className="hero-title-gradient">Borlasa</span>
               </h1>
-              <p className="hero-subtitle">BSIT Graduate | Full-Stack Web & Mobile App Developer</p>
+              <p className="hero-subtitle">BSIT Graduate · Full-Stack Web & Mobile App Developer</p>
               <p className="hero-description">
                 Graduated from Cavite State University – Main Campus, Indang, Cavite with a Bachelor of Science in
-                Information Technology (BSIT) in 2026. I build with Angular, .NET, React Native, React, PHP, SQL,
-                Firebase, HTML, CSS, Bootstrap, and JavaScript/TypeScript — crafting fast, responsive, modern, and
-                aesthetic digital experiences that adapt seamlessly to any device, with thoughtful animations,
-                seamless transitions, and a focus on usability.
+                Information Technology (BSIT) in 2026. Freelancing since 2024 — building websites, company systems,
+                trackers, emergency systems, and mobile apps. I build with Angular, .NET, React Native, React, PHP,
+                SQL, Firebase, HTML, CSS, Bootstrap, and JavaScript/TypeScript — fast, responsive, and tailored to
+                fit your needs at an affordable rate.
               </p>
               <div className="hero-actions">
                 <a className="btn btn-primary" href="#projects">
@@ -67,18 +71,34 @@ function App() {
                   Get In Touch
                 </a>
               </div>
+              <div className="hero-meta">
+                <div className="meta-item">
+                  <span className="meta-value">2024</span>
+                  <span className="meta-label">Freelance Since</span>
+                </div>
+                <div className="meta-divider" />
+                <div className="meta-item">
+                  <span className="meta-value">Full-Stack</span>
+                  <span className="meta-label">Web & Mobile</span>
+                </div>
+                <div className="meta-divider" />
+                <div className="meta-item">
+                  <span className="meta-value">Responsive</span>
+                  <span className="meta-label">Any Device</span>
+                </div>
+              </div>
             </div>
             <div className="hero-profile">
+              <div className="profile-orbit" />
               <div className="profile-ring">
                 <div className="profile-frame">
                   <img className="profile-image" src="/profile.jpg" alt="Glorimo Jay Borlasa" onError={(e) => { e.currentTarget.style.display = 'none' }} />
                   <div className="profile-fallback">GJB</div>
                 </div>
               </div>
-              <div className="hero-orbit">
-                <span className="orbit-dot orbit-dot--one" />
-                <span className="orbit-dot orbit-dot--two" />
-                <span className="orbit-dot orbit-dot--three" />
+              <div className="profile-card">
+                <p className="profile-card-title">Glorimo Jay Borlasa</p>
+                <p className="profile-card-subtitle">BSIT · CvSU Indang, Cavite</p>
               </div>
             </div>
           </div>
