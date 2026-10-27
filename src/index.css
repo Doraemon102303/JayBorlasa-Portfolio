@@ -1,0 +1,63 @@
+:root {
+  --bg: #0b1026;
+  --bg-secondary: #0f172a;
+  --bg-card: #111b2e;
+  --text: #cbd5e1;
+  --text-h: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #38bdf8;
+  --accent-2: #a78bfa;
+  --border: #1e293b;
+  --glow: rgba(56, 189, 248, 0.25);
+
+  --sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --heading: 'Sora', 'Inter', system-ui, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  font: 16px/1.7 var(--sans);
+  letter-spacing: 0.01em;
+  color-scheme: dark;
+  color: var(--text);
+  background: radial-gradient(circle at top, #1e293b33, transparent 55%), var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #1e293b33, transparent 55%), var(--bg);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+section {
+  scroll-margin-top: 96px;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.35);
+  color: var(--text-h);
+}
